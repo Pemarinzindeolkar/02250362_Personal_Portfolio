@@ -1,99 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>First Global</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      margin: 0;
-      min-height: 100vh;
-      background: #f4f6fa;
-      color: #222;
-      display: flex;
       font-family: 'Poppins', sans-serif;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
-      max-width: 100%;
-      width: 97vw;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-      align-items: center;
-    }
-    h1 {
-      font-size: 9rem;
-      font-weight: 400;
-      letter-spacing: -2px;
-      color: #22223b;
-    }
-    .images-row {
-      display: flex;
-      gap: 6%;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 12px;
-    }
-    .images-row img {
-      max-width: 25%;
-      max-height: 30%;
-      border-radius: 15px;
-      box-shadow: 0 1px 10px rgba(77,98,217,0.10);
-      background: #e9ecef;
-      object-fit: cover;
-    }
-    .desc {
-      font-size: 2.5rem;
-      color: #444;
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 1.5;
-      max-width: 100%;
-      font-weight: 400;
-    }
-    .nav {
-      margin-top: 28px;
-    }
-    .nav a {
-      background: #fcfadc;
-      color: #000000;
-      text-decoration: none;
-      padding: 10px 28px;
-      border-radius: 60px;
-      font-weight: 300;
-      font-size: 2.5rem;
-      transition: background 0.18s;
-      margin: 0 8px;
-    }
-    .nav a:hover {
-      background: #fdf8b7;
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>First Global</h1>
-    <div class="images-row">
-      <img src="team1.jpg" alt="Team photo">
-      <img src="robot.jpg" alt="Robot">
-      <img src="team.jpg" alt="Programming Team">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+  <div class="container bg-white rounded-2xl shadow-lg max-w-[97vw] p-10 flex flex-col gap-6 items-center">
+    
+    <h1 class="text-7xl font-normal tracking-tight text-gray-900 hover:text-blue-300 hover:drop-shadow-lg cursor-pointer transition duration-200 ease-in-out">
+      First Global
+    </h1>
+    
+    <div class="images-row flex gap-6 flex-wrap justify-center w-full mb-3">
+      <img src="team1.jpg" alt="Team photo" class="max-w-[30%] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+      <img src="robot.jpg" alt="Robot" class="max-w-[30%] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+      <img src="team.jpg" alt="Programming Team" class="max-w-[30%] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
     </div>
-    <div class="desc">
-      <p>
+    
+    <div class="desc text-gray-600 text-2xl max-w-5xl leading-relaxed text-justify">
+      <p class="mb-4">
         The FIRST Global Competition was something entirely new to me, I had never heard of it before, even though I was always deeply involved in extracurricular activities. It was my first time learning about such an international event, and I was truly honored to be part of the non-traveling team, supporting the main team that represented Bhutan in Singapore.
       </p>
       <p>
         Within the team, we were divided into several groups, such as construction, multimedia, and programming. I was a member of the programming group, where I contributed my skills and knowledge to help our team grow and improve. Even though I wasn’t among those who travelled, I felt proud knowing that my efforts played a small part in something much bigger—helping my friends represent Bhutan on a global stage.
       </p>
     </div>
-    <div class="nav">
-      <a href="index.html">Back to Home</a>
+    
+    <div class="nav mt-7 w-full flex justify-center">
+      <a href="index.html" class="bg-yellow-100 text-black px-7 py-3 rounded-full font-light text-3xl hover:bg-yellow-200 transition duration-200 ease-in-out">
+        Back to Home
+      </a>
     </div>
+    
   </div>
 </body>
 </html>

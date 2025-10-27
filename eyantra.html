@@ -1,143 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>E-yantra</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #fff;
-      color: #222;
-    }
-    .container {
-      max-width: 100vw;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-    }
-    .page {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
-    .left, .right {
-      width: 50%;
-      box-sizing: border-box;
-      padding: 40px 32px;
-    }
-    .left {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      justify-content: flex-start;
-    }
-    .right {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      align-items: center;
-      justify-content: center;
-    }
-    h1 {
-      font-size: 9rem;
-      font-weight: 400;
-      padding-top: 0%;
-      margin-bottom: 12px;
-      letter-spacing: -2px;
-      color: #22223b;
-      padding-left: 10%;
-    }
-    h1:hover {
-    color: #C5D5E5;
-    text-shadow: 0 4px 32px rgba(230,57,70,0.16);
-    cursor: pointer;
-  }
-    p {
-      font-size: 2.5rem;
-      margin: 0 0 16px 0;
-      line-height: 1.6;
-      font-weight: 400;
-
-    }
-    .image-block {
-      display: flex;
-      gap: 80px;
-      margin: 5px 0 0 0;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .image-block img {
-      border-radius: 8px;
-      background: #eee;
-      max-width: 900px;
-      max-height: 550px;
-      object-fit: cover;
-      display: block;
-    }
-    .cert-image {
-      max-width: 800px;
-      width: 50%;
-      border-radius: 8px;
-      box-shadow: 0 3px 16px rgba(0,0,0,0.13);
-      margin-bottom: 18px;
-    }
-    @media (max-width: 900px) {
-      .page { flex-direction: column; }
-      .left, .right { width: 100%; padding: 24px 10px; }
-      h1 { font-size: 32px; }
-      .cert-image { max-width: 100%; }
-    }
-
-
-    .nav {
-      margin-top: 28px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .nav a {
-      background: #fcfadc;
-      color: #000000;
-      text-decoration: none;
-      padding: 10px 28px;
-      border-radius: 60px;
-      font-weight: 300;
-      font-size: 2.5rem;
-      transition: background 0.18s;
-      margin: 0 8px;
-      text-align: center;
-    }
-    .nav a:hover {
-      background: #fdf8b7;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>E-yantra</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>body { font-family: 'Poppins', sans-serif; }</style>
 </head>
-<body>
-  <div class="container">
-    <div class="page">
-      <div class="left">
-        <h1>E-yantra</h1>
-        <p>
-          E-yantra was my first major project, which I took part in back in 2021 when I was in the 9th grade. At that time, ChatGPT didn’t exist, and that was when we truly discovered our own potential and how dedicated we could be. Our team of four participated in the E-yantra Robotics Competition organized by E-yantra, based in India. We were required to program, present our ideas, and submit our projects online.        </p>
-        <div class="image-block">
-          <img src="game.png" alt="Game Screenshot">
-          <img src="tiktactoe.png" alt="Tic Tac Toe Screenshot">
+<body class="bg-white text-gray-900 scroll-smooth">
+  <div class="container mx-auto max-w-full p-0">
+    <div class="page flex flex-col md:flex-row flex-wrap min-h-screen w-full box-border">
+      <div class="left flex flex-col gap-6 justify-start w-full md:w-1/2 p-8">
+        <h1 class="text-7xl md:text-9xl font-normal text-gray-900 pl-10 cursor-pointer hover:text-blue-300 hover:drop-shadow-lg transition duration-200 ease-in-out">
+          E-yantra
+        </h1>
+        <p class="text-3xl leading-relaxed font-normal m-0">
+          E-yantra was my first major project, which I took part in back in 2021 when I was in the 9th grade. At that time, ChatGPT didn’t exist, and that was when we truly discovered our own potential and how dedicated we could be. Our team of four participated in the E-yantra Robotics Competition organized by E-yantra, based in India. We were required to program, present our ideas, and submit our projects online.
+        </p>
+        <div class="image-block flex flex-wrap gap-20 mt-1 items-center">
+          <img src="game.png" alt="Game Screenshot" class="rounded-lg bg-gray-200 max-w-full max-h-[550px] object-cover" />
+          <img src="tiktactoe.png" alt="Tic Tac Toe Screenshot" class="rounded-lg bg-gray-200 max-w-full max-h-[550px] object-cover" />
         </div>
       </div>
-      <div class="right">
-        <img src="e-Yantra.jpg" class="cert-image" alt="Eyantra Certificate">
-        <p>
-          Guided by our teachers, we explored Python on our own, experimenting with new methods and learning how different programming concepts could be implemented. We even used the Turtle library to create drawings through code. By the end of the competition, our team was honored to be ranked among the top 16 teams, and we received honorable mentions from the organizers.        </p>
+      <div class="right flex flex-col gap-6 items-center justify-center w-full md:w-1/2 p-8">
+        <img src="e-Yantra.jpg" alt="Eyantra Certificate" class="rounded-lg shadow-lg max-w-[80%] sm:max-w-[50%]" />
+        <p class="text-3xl leading-relaxed font-normal m-0 max-w-xl text-center md:text-left">
+          Guided by our teachers, we explored Python on our own, experimenting with new methods and learning how different programming concepts could be implemented. We even used the Turtle library to create drawings through code. By the end of the competition, our team was honored to be ranked among the top 16 teams, and we received honorable mentions from the organizers.
+        </p>
       </div>
-      <div class="nav">
-        <a href="index.html">Back to Home</a>
-      </div>
+    </div>
+    <div class="nav flex justify-center items-center w-full mt-7">
+      <a href="index.html" class="bg-yellow-100 text-black no-underline px-7 py-3 rounded-full font-light text-3xl hover:bg-yellow-200 transition duration-200 ease-in-out">
+        Back to Home
+      </a>
     </div>
   </div>
 </body>

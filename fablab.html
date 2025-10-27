@@ -1,107 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fablab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      margin: 0;
-      min-height: 100vh;
-      background: #f4f6fa;
-      color: #222;
       font-family: 'Poppins', sans-serif;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
-      max-width: 100%;
-      width: 95vw;
-      padding: 40px;
-      padding-top: 0%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1 {
-      font-size: 9rem;
-      font-weight: 400;
-      padding-top: 0%;
-      margin-bottom: 12px;
-      letter-spacing: -2px;
-      color: #22223b;
-    }
-    h1:hover {
-    color: #C5D5E5;
-    text-shadow: 0 4px 32px rgba(230,57,70,0.16);
-    cursor: pointer;
-  }
-    .images-row {
-      display: flex;
-      gap: 15%;
-      align-items: center;
-      justify-content: center;
-    }
-    .images-row img {
-      max-width: 40%;
-      max-height: 40%;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      background: #e9ecef;
-      object-fit: cover;
-    }
-    p {
-      font-size: 2.2rem;
-      line-height: 2;
-      color: #444;
-      margin-top: 0;
-      margin-bottom: 0;
-      max-width: 100%;
-      font-weight: 400;
-
-    }
-    .nav {
-      margin-top: 28px;
-    }
-    .nav a {
-      background: #fcfadc;
-      color: #000000;
-      text-decoration: none;
-      padding: 10px 28px;
-      border-radius: 60px;
-      font-weight: 300;
-      font-size: 2.5rem;
-      transition: background 0.18s;
-      margin: 0 8px;
-    }
-    .nav a:hover {
-      background: #fdf8b7;
     }
   </style>
-
 </head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-
-  <body>
-    <div class="container">
-      <h1>Fab Lab</h1>
-      <div class="images-row">
-        <img src="crawler.jpg" alt="Crawler Drone">
-        <img src="profile.png" class="circle-img" alt="Profile">
-      </div>
-      <p>
-        My participation in the Fab Lab is one of the achievements I am truly proud of from my high school years. Being part of the Fab Lab management team was not only an honor but also an experience that shaped me into the person I am today. Through the Fab Lab, I learned to operate various types of machinery from teachers, peers, and online resources, and I was always eager to share that knowledge by teaching my juniors.
-      </p>
-      <p>
-        I was among the students who excelled in handling most of the Fab Lab equipment. Over time, I completed several projects using its machines—one of them was creating an Eiffel Tower model for my mathematics project on integral calculus, using laser cutting technology. I also contributed to the crawler drone project through 3D printing and Shop-Bot circuit board fabrication. Beyond that, I helped redesign the Fab Lab space, applying my skills in 3D design, and explored other creative processes such as t-shirt designing and sticker printing.
-      </p>
-      <div class="nav">
-        <a href="index.html">Back to Home</a>
-      </div>
+  <div class="container bg-white rounded-2xl shadow-lg max-w-[95vw] p-10 flex flex-col items-center">
+    <h1 class="text-[9rem] font-normal mb-3 tracking-tight text-gray-900 
+               hover:text-blue-300 hover:drop-shadow-lg cursor-pointer transition duration-200 ease-in-out">
+      Fab Lab
+    </h1>
+    
+    <div class="images-row flex gap-[15%] items-center justify-center w-full max-w-screen-lg mb-6 flex-wrap">
+      <img src="crawler.jpg" alt="Crawler Drone" class="max-w-[45%] max-h-[40vh] rounded-xl shadow-md bg-gray-200 object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+      <img src="profile.png" alt="Profile" class="max-w-[45%] max-h-[40vh] rounded-full shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
     </div>
+    
+    <p class="text-2xl text-gray-700 leading-relaxed max-w-4xl mb-4 text-justify font-normal">
+      My participation in the Fab Lab is one of the achievements I am truly proud of from my high school years. Being part of the Fab Lab management team was not only an honor but also an experience that shaped me into the person I am today. Through the Fab Lab, I learned to operate various types of machinery from teachers, peers, and online resources, and I was always eager to share that knowledge by teaching my juniors.
+    </p>
+    
+    <p class="text-2xl text-gray-700 leading-relaxed max-w-4xl mb-8 text-justify font-normal">
+      I was among the students who excelled in handling most of the Fab Lab equipment. Over time, I completed several projects using its machines—one of them was creating an Eiffel Tower model for my mathematics project on integral calculus, using laser cutting technology. I also contributed to the crawler drone project through 3D printing and Shop-Bot circuit board fabrication. Beyond that, I helped redesign the Fab Lab space, applying my skills in 3D design, and explored other creative processes such as t-shirt designing and sticker printing.
+    </p>
+
+    <div class="nav w-full flex justify-center mt-7">
+      <a href="index.html" class="bg-yellow-100 text-black px-7 py-3 rounded-full font-light text-3xl hover:bg-yellow-200 transition duration-200 ease-in-out">
+        Back to Home
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
