@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Meta tags for character set and responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pema R Deolkar — CV</title>
+  <!-- Importing Poppins font with different weights from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- TailwindCSS CDN for utility-first styling -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inline style to apply Poppins font throughout the entire document -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -13,16 +18,19 @@
   </style>
 </head>
 <body class="bg-amber-50 text-gray-900 scroll-smooth">
+<!-- Body with background amber color, dark gray text, smooth scrolling -->
 
-  <!-- HERO -->
+  <!-- HERO Section: Introduction and profile image -->
   <section id="hero" class="bg-amber-50 flex flex-col md:flex-row items-center justify-between px-10 py-32 text-left">
     <div class="hero-text max-w-4xl text-purple-700">
+      <!-- Main headline with large, bold, interactive text -->
       <p class="pt-3 text-lg text-gray-700">Hello, I'm Pema,</p>
       <h1 class="text-6xl md:text-8xl font-extrabold leading-tight text-purple-600 hover:text-purple-800 transition-colors duration-300 cursor-pointer">
         Software<br />Engineering<br />Student
       </h1>
       <p class="pt-3 text-lg text-gray-700">based in Phuentsholing, Bhutan.</p>
     </div>
+    <!-- Profile image wrapper with rounded-full, shadow and sizing for different screens -->
     <div class="hero-img rounded-full overflow-hidden shadow-lg w-96 h-96 md:w-[28rem] md:h-[28rem] mt-10 md:mt-0">
         <div class="hero-img rounded-full overflow-hidden shadow-lg w-[22rem] h-[22rem] md:w-[30rem] md:h-[30rem] mt-10 md:mt-0">
             <img src="profile.jpg" alt="Profile Image" class="w-full h-full object-cover" />
@@ -31,23 +39,26 @@
   </section>
   
 
-  <!-- ABOUT -->
+  <!-- ABOUT Section: Personal introduction and skills overview -->
   <section id="about" class="bg-amber-50 px-10 py-32 text-left">
+    <!-- Section title styled as large, bold, blue text -->
     <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-16 tracking-tight">about</h2>
     <div class="about-text pl-6 max-w-3xl">
+    <!-- Paragraph describing educational background and interests -->
       <p class="text-lg md:text-xl leading-relaxed text-gray-900 pt-3 max-w-prose mx-auto">
         I have a strong skill-based foundation from high school and have been deeply engaged in my college studies in software engineering. I enjoy building functional, user-friendly websites and solving complex problems through code. Throughout my education, I have gained hands-on experience with programming, data structures, and computer networking, and I’m always eager to apply what I’ve learned to real-world projects.
       </p>
     </div>
   </section>  
 
-  <!-- EXPERIENCE -->
+  <!-- EXPERIENCE Section: Details of projects and internships in a collapsible timeline -->
   <section id="experience" class="bg-amber-50 px-10 py-32 text-left">
     <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-16 tracking-tight">experience</h2>
   
     <div class="timeline pl-6 flex flex-col gap-12 max-w-full w-full">
-  
+        <!-- Dropdown item: E-yantra project -->
       <div class="dropdown-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1 max-w-full">
+        <!-- Button to expand/collapse content with ARIA accessibility -->
         <button aria-expanded="false"
           class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-xl md:text-2xl px-6 focus:outline-none">
           E-yantra
@@ -56,24 +67,28 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
+        <!-- Collapsible content container initially hidden and animated on toggle -->
         <div class="content mt-4 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-full">
-          <p class="text-gray-500 mb-3 md:mb-5 text-sm md:text-base">Sept 2023 – Oct 2023</p>
+            <!-- Period of experience -->
+            <p class="text-gray-500 mb-3 md:mb-5 text-sm md:text-base">Sept 2023 – Oct 2023</p>
           <div class="flex flex-col md:flex-row gap-8 w-full">
             <div class="flex flex-wrap gap-6 justify-start w-full md:w-1/2">
+              <!-- Description of project and motivation -->
               <p class="leading-relaxed font-normal m-0 md:text-lg text-base max-w-full">
                 E-yantra was my first major project, which I took part in back in 2021 when I was in the 9th grade. At that time,
                 ChatGPT didn’t exist, and that was when we truly discovered our own potential and how dedicated we could be.
                 Our team of four participated in the E-yantra Robotics Competition organized by E-yantra, based in India. We were
                 required to program, present our ideas, and submit our projects online.
               </p>
+              <!-- Image related to the project -->
               <div class="image-block flex flex-wrap gap-6 mt-3 items-center justify-start w-full">
                 <img src="game.png" alt="Game Screenshot"
-                  class="rounded-lg bg-gray-200 max-w-[48%] md:max-w-[48%] max-h-[40vh] object-cover shadow-md" />
+                  class="rounded-lg bg-gray-200 max-w-[40%] md:max-w-[40%] max-h-[300px] object-cover shadow-md" />
               </div>
             </div>
             <div class="w-full md:w-1/2 flex flex-col gap-5 items-center justify-center">
               <img src="e-Yantra.jpg" alt="Eyantra Certificate"
-                class="rounded-lg shadow-lg max-w-[90%] sm:max-w-[70%] md:max-w-full object-contain" />
+                class="rounded-lg shadow-lg max-w-[60%] sm:max-w-[50%] md:max-w-[70%] object-contain" />
               <p class="leading-relaxed font-normal m-0 max-w-xl text-center md:text-left md:text-lg text-base mt-4">
                 Guided by our teachers, we explored Python on our own, experimenting with new methods and learning how different programming concepts could be implemented. We even used the Turtle library to create drawings through code. By the end of the competition, our team was honored to be ranked among the top 16 teams, and we received honorable mentions from the organizers.
               </p>
@@ -81,9 +96,10 @@
           </div>
         </div>
       </div>
-  
-      
-  
+    </div>
+  </section>
+  <!-- Additional Experience Items placed outside the above section for some reason - may need to be moved -->
+  <!-- Space and Technology Internship dropdown item -->
       <div class="dropdown-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1 max-w-full">
         <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-xl md:text-2xl focus:outline-none">
           Space and Technology Internship 
@@ -100,6 +116,7 @@
               <img src="dobsonian_telescope.JPG" alt="Stargazing" class="rounded-xl shadow-md bg-gray-200 object-cover hover:scale-105 transition-transform duration-200 ease-in-out max-w-[48%] md:max-w-[50%] max-h-[40vh]" />
             </div>
             <div class="w-full md:w-1/2 flex items-center">
+          <!-- Internship description -->
               <p class="leading-relaxed font-normal text-justify md:text-lg text-base max-w-full">
                 Back in high school, I was part of the Space and Technology Internship Program for two years. Through this program, we learned various extracurricular skills such as telescope handling, using Fab Lab technologies and machinery, and exploring ideas related to space. We often organized stargazing events where we set up telescopes for other students to observe the night sky. After learning from our seniors, we also taught younger students how telescopes work and the mechanisms behind them. As we progressed, we continued this tradition passing down the skills and knowledge we had gained to new members of the program, just as our seniors had done for us.
               </p>
@@ -108,7 +125,7 @@
         </div>
       </div>
       
-  
+    <!-- First Global Robotics dropdown item -->
       <div class="dropdown-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1 max-w-full">
         <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-xl md:text-2xl focus:outline-none">
           First Global Robotics 
@@ -121,12 +138,14 @@
           <p class="text-gray-500 mb-3 md:mb-5 text-sm md:text-base">Oct 2021 – Jan 2022</p>
           <div class="flex flex-col md:flex-row gap-8 w-full">
             <div class="flex flex-wrap gap-6 justify-center w-full md:w-1/2">
+          <!-- Photos of robot and team -->
               <img src="robot.jpg" alt="Robot"
                 class="rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out max-w-[45%] md:max-w-[40%] max-h-[40vh]" />
               <img src="team.jpg" alt="Programming Team"
                 class="rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out max-w-[45%] md:max-w-[40%] max-h-[40vh]" />
             </div>
             <div class="w-full md:w-1/2 flex flex-col justify-center">
+          <!-- Description of involvement and role -->
               <p class="mb-4 leading-relaxed md:text-lg text-base max-w-full text-justify">
                 The FIRST Global Competition was something entirely new to me, I had never heard of it before, even though I was always deeply involved in extracurricular activities. It was my first time learning about such an international event, and I was truly honored to be part of the non-traveling team, supporting the main team that represented Bhutan in Singapore.
               </p>
@@ -137,7 +156,7 @@
           </div>
         </div>
       </div>
-  
+  <!-- PANOPTES telescope project dropdown -->
       <div class="dropdown-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1 max-w-full">
         <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-xl md:text-2xl focus:outline-none">
           PANOPTES 
@@ -149,9 +168,11 @@
         <div class="content mt-4 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-full">
           <div class="flex flex-col md:flex-row gap-8 w-full px-4 md:px-6">
             <div class="left flex flex-col gap-5 justify-start w-full md:w-1/2 p-4 md:p-6 box-border">
+            <!-- Contribution to telescope upgrade described -->
               <p class="leading-relaxed font-normal mb-5 md:text-lg text-base">
                 Contributed to the successful upgrade and installation of the PANOPTES astronomical telescope units as part of a collaborative project involving international experts and local educational institutions.
               </p>
+          <!-- Image related to the telescope -->
               <div class="image-block flex flex-wrap gap-6 items-center justify-start">
                 <img src="panoptes.jpeg" alt="PANOPTES Telescope"
                   class="rounded-lg bg-gray-200 max-w-[400px] max-h-[320px] object-cover shadow-md hover:scale-105 transition-transform duration-200 ease-in-out w-full md:w-auto" />
@@ -169,7 +190,7 @@
           </div>
         </div>
       </div>
-      
+  <!-- FABLAB involvement dropdown -->
       <div class="dropdown-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1 max-w-full">
         <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-xl md:text-2xl focus:outline-none">
           FABLAB 
@@ -185,6 +206,7 @@
               <img src="profile.png" alt="Profile" class="rounded-full shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out max-w-[48%] md:max-w-[45%] max-h-[40vh]" />
             </div>
             <div class="w-full md:w-1/2 flex flex-col justify-center">
+        <!-- Description of Fab Lab involvement -->
               <p class="leading-relaxed font-normal text-justify mb-6 md:text-lg text-base max-w-full">
                 My participation in the Fab Lab is one of the achievements I am truly proud of from my high school years. Being part of the Fab Lab management team was not only an honor but also an experience that shaped me into the person I am today. Through the Fab Lab, I learned to operate various types of machinery from teachers, peers, and online resources, and I was always eager to share that knowledge by teaching my juniors.
               </p>
@@ -221,12 +243,12 @@
   </script>
   
 
-  <!-- EDUCATION -->
+  <!-- EDUCATION Section: Educational background overview in a responsive grid -->
   <section id="education" class="bg-amber-50 px-10 py-32 text-left">
     <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-16 tracking-tight">education</h2>
   
     <div class="edu-grid flex flex-col gap-12 max-w-full w-full px-6 md:px-12">
-  
+      <!-- Primary Education item with icon -->
       <div class="edu-item flex flex-col md:flex-row items-center gap-6 w-full border-b border-gray-300 pb-8">
         <img src="open-book.png" alt="Primary School" class="edu-img rounded-xl max-h-24 w-auto object-cover" />
         <div class="edu-text flex-1 text-center md:text-left text-2xl md:text-3xl font-semibold">
@@ -236,7 +258,7 @@
           Gangrithang Primary School<br>7 years
         </div>
       </div>
-  
+      <!-- Higher Education item with icon -->
       <div class="edu-item flex flex-col md:flex-row items-center gap-6 w-full border-b border-gray-300 pb-8">
         <img src="mortarboard.png" alt="Royal Academy" class="edu-img rounded-xl max-h-24 w-auto object-cover" />
         <div class="edu-text flex-1 text-center md:text-left text-2xl md:text-3xl font-semibold">
@@ -246,7 +268,7 @@
           The Royal Academy<br>Diploma in Bhutan Baccalaureate<br>6 years
         </div>
       </div>
-  
+      <!-- Undergraduate Education item with icon -->
       <div class="edu-item flex flex-col md:flex-row items-center gap-6 w-full">
         <img src="bachelor.png" alt="College of Science and Technology" class="edu-img rounded-xl max-h-24 w-auto object-cover" />
         <div class="edu-text flex-1 text-center md:text-left text-2xl md:text-3xl font-semibold">
@@ -260,13 +282,15 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS Section: Showcasing selected projects with description and images -->
   <section id="projects" class="bg-amber-50 px-10 py-32 text-left">
     <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-8 tracking-tight">work</h2>
+    <!-- Introductory paragraph describing the portfolio -->
     <p class="pl-10 text-3xl text-gray-900 pb-16 max-w-5xl">
       My portfolio offers an array of captivating design narratives and visuals. For a deeper dive, you're welcome to check out my projects and be captivated.
     </p>
     <div class="project-grid grid grid-cols-1 md:grid-cols-2 gap-8 max-w-full w-full">
+      <!-- Individual project card -->
       <div class="project bg-white rounded-xl p-6 shadow-sm text-left transition hover:shadow-lg cursor-pointer">
         <img src="slams.png" alt="slams" class="rounded-lg mb-4" />
         <h3 class="text-purple-700 text-2xl mb-2">Explore Project Prototype on S.L.A.M.S</h3>
@@ -280,27 +304,27 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT Section: Contact details with icons and external links -->
   <section id="contact" class="bg-amber-50 px-10 py-32 text-left max-w-full">
     <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-6 pb-4 tracking-tight">contact</h2>
-  
+    <!-- Email contact -->
     <div class="flex items-center gap-4 pl-10 mb-6 text-3xl max-w-4xl">
       <img src="gmail.png" alt="Email Logo" class="w-8 h-8 object-contain" />
       <p class="m-0">02250362.cst@rub.edu.bt</p>
     </div>
-  
+    <!-- Phone contact -->
     <div class="flex items-center gap-4 pl-10 mb-6 text-3xl max-w-4xl">
       <img src="phone-call.png" alt="Phone Logo" class="w-8 h-8 object-contain" />
       <p class="m-0">+975 77724363</p>
     </div>
-  
+    <!-- GitHub profile link -->
     <div class="flex items-center gap-4 pl-10 mb-6 text-3xl max-w-4xl">
       <img src="github.png" alt="GitHub Logo" class="w-8 h-8 object-contain" />
       <a href="https://github.com/Pemarinzindeolkar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
         Pemarinzindeolkar
       </a>
     </div>
-  
+    <!-- Figma design profile link -->
     <div class="flex items-center gap-4 pl-10 mb-6 text-3xl max-w-4xl">
       <img src="figma.png" alt="Figma Logo" class="w-8 h-8 object-contain" />
       <a href="https://www.figma.com/design/haN97th5EonMxiJiqmRVvw/Phase-I?t=Zkc1fxyPgb8Zwbow-0" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
@@ -310,7 +334,7 @@
   </section>
   
   
-
+  <!-- Footer with scroll-to-top link -->
   <footer class="text-center py-12 bg-gray-200 text-3xl text-gray-500 cursor-pointer">
     <a href="#top" id="scrollToTop" class="w-full block h-full text-gray-500 no-underline hover:underline">Back of the beginning of my CV</a>
   </footer>
