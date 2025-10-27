@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PANOPTES</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    .container {
+      max-width: 100vw;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .page {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .left, .right {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 40px 32px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: flex-start;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 9rem;
+      font-weight: 400;
+      padding-top: 0%;
+      margin-bottom: 12px;
+      letter-spacing: -2px;
+      color: #22223b;
+    }
+    h1:hover {
+      color: #C5D5E5;
+      text-shadow: 0 4px 32px rgba(230,57,70,0.16);
+      cursor: pointer;
+    }
+    p {
+      font-size: 2.5rem;
+      margin: 0 0 16px 0;
+      line-height: 2;
+      font-weight: 400;
+    }
+    .image-block {
+      display: flex;
+      gap: 38px;
+      margin: 10px 0 0 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .image-block img {
+      border-radius: 8px;
+      background: #eee;
+      max-width: 600px; 
+      max-height: 480px; 
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .main-image {
+      width: 100%;
+      max-width: 1000px; 
+      border-radius: 14px;
+    }
+    @media (max-width: 900px) {
+      .page { flex-direction: column; }
+      .left, .right { width: 100%; padding: 24px 10px; }
+      h1 { font-size: 32px; }
+      .main-image { max-width: 100%; }
+      .image-block { justify-content: center; gap: 20px; }
+      .image-block img { max-width: 90%; max-height: auto; }
+    }
+    .nav {
+      margin-top: 28px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav a {
+      background: #fcfadc;
+      color: #000000;
+      text-decoration: none;
+      padding: 10px 28px;
+      border-radius: 60px;
+      font-weight: 300;
+      font-size: 2.5rem;
+      transition: background 0.18s;
+      margin: 0 8px;
+      text-align: center;
+    }
+    .nav a:hover {
+      background: #fdf8b7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page">
+      <div class="left">
+        <h1>PANOPTES</h1>
+        <p>
+          Contributed to the successful upgrade and installation of the PANOPTES astronomical telescope units as part of a collaborative project involving international experts and local educational institutions.
+        </p>
+        <div class="image-block">
+          <img src="panoptes.jpeg" alt="PANOPTES Telescope">
+          <img src="panoptes.jpg" alt="PANOPTES Certificate">
+        </div>
+      </div>
+      <div class="right">
+        <img src="star.png" class="main-image" alt="Star Trails">
+        <p>
+          Engaged in the assembly, modification, and testing of hardware components including camera and control boxes. Participated in software configuration and communication setup to optimize telescope functionality.<br><br>
+          This experience enhanced technical skills in telescope instrumentation and teamwork in a multidisciplinary environment.
+        </p>
+      </div>
+      <div class="nav">
+        <a href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-yantra</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    .container {
+      max-width: 100vw;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .page {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .left, .right {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 40px 32px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: flex-start;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 9rem;
+      font-weight: 400;
+      padding-top: 0%;
+      margin-bottom: 12px;
+      letter-spacing: -2px;
+      color: #22223b;
+      padding-left: 10%;
+    }
+    h1:hover {
+    color: #C5D5E5;
+    text-shadow: 0 4px 32px rgba(230,57,70,0.16);
+    cursor: pointer;
+  }
+    p {
+      font-size: 2.5rem;
+      margin: 0 0 16px 0;
+      line-height: 1.6;
+      font-weight: 400;
+
+    }
+    .image-block {
+      display: flex;
+      gap: 80px;
+      margin: 5px 0 0 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .image-block img {
+      border-radius: 8px;
+      background: #eee;
+      max-width: 900px;
+      max-height: 550px;
+      object-fit: cover;
+      display: block;
+    }
+    .cert-image {
+      max-width: 800px;
+      width: 50%;
+      border-radius: 8px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.13);
+      margin-bottom: 18px;
+    }
+    @media (max-width: 900px) {
+      .page { flex-direction: column; }
+      .left, .right { width: 100%; padding: 24px 10px; }
+      h1 { font-size: 32px; }
+      .cert-image { max-width: 100%; }
+    }
+
+
+    .nav {
+      margin-top: 28px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .nav a {
+      background: #fcfadc;
+      color: #000000;
+      text-decoration: none;
+      padding: 10px 28px;
+      border-radius: 60px;
+      font-weight: 300;
+      font-size: 2.5rem;
+      transition: background 0.18s;
+      margin: 0 8px;
+      text-align: center;
+    }
+    .nav a:hover {
+      background: #fdf8b7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page">
+      <div class="left">
+        <h1>E-yantra</h1>
+        <p>
+          E-yantra was my first major project, which I took part in back in 2021 when I was in the 9th grade. At that time, ChatGPT didn’t exist, and that was when we truly discovered our own potential and how dedicated we could be. Our team of four participated in the E-yantra Robotics Competition organized by E-yantra, based in India. We were required to program, present our ideas, and submit our projects online.        </p>
+        <div class="image-block">
+          <img src="game.png" alt="Game Screenshot">
+          <img src="tiktactoe.png" alt="Tic Tac Toe Screenshot">
+        </div>
+      </div>
+      <div class="right">
+        <img src="e-Yantra.jpg" class="cert-image" alt="Eyantra Certificate">
+        <p>
+          Guided by our teachers, we explored Python on our own, experimenting with new methods and learning how different programming concepts could be implemented. We even used the Turtle library to create drawings through code. By the end of the competition, our team was honored to be ranked among the top 16 teams, and we received honorable mentions from the organizers.        </p>
+      </div>
+      <div class="nav">
+        <a href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
