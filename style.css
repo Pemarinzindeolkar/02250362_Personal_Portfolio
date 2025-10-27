@@ -97,3 +97,40 @@ section{min-height:100vh;display:flex;align-items:center;justify-content:center;
   .hero-text h1{font-size:clamp(28px,8vw,48px);}
   .hero-img{width:160px;height:160px;}
 }
+
+.edu-grid {
+  max-width: 100%;
+}
+.edu-item {
+  display: flex;
+  align-items: center;
+}
+.edu-img {
+  max-height: 8rem; /* 128px */
+  border-radius: 0.75rem; /* rounded-xl */
+  object-fit: cover;
+}
+.edu-text {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.5rem; /* text-2xl */
+  text-align: center;
+}
+.edu-years {
+  font-size: 1.125rem; /* text-xl */
+  font-weight: 400;
+  color: #4a5568; /* gray-700 */
+  text-align: right;
+  min-width: 6rem;
+}
+@media (max-width: 768px) {
+  .edu-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .edu-text, .edu-years {
+    text-align: center;
+    min-width: auto;
+  }
+}

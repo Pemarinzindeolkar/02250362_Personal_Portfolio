@@ -17,7 +17,7 @@
   <!-- HERO -->
   <section id="hero" class="bg-amber-50 flex flex-col md:flex-row items-center justify-between px-10 py-32 text-left">
     <div class="hero-text max-w-4xl text-purple-700">
-      <p class="text-base tracking-wide">Hello, I'm Pema,</p>
+    <p class="pt-3 text-lg text-gray-700">Hello, I'm Pema,</p>
       <h1 class="text-6xl md:text-8xl font-extrabold leading-tight text-purple-600">
         Software<br />Engineering<br />Student
       </h1>
@@ -38,62 +38,215 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
   <section id="experience" class="bg-amber-50 px-10 py-32 text-left">
-    <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-8 pb-6 tracking-tight">experience</h2>
-    <div class="timeline pl-10 flex flex-col gap-14 max-w-full w-full">
-      <div class="timeline-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
-        <a href="eyantra.html" class="timeline-link inline-block text-gray-600 hover:text-blue-600 transition">
-          <h3 class="text-xl md:text-3xl">E-Yantra Robotics Competition</h3>
-        </a>
-        <p class="text-base md:text-lg text-gray-500 mt-2">Sept 2023 – Oct 2023</p>
+    <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-16 tracking-tight">experience</h2>
+  
+    <div class="timeline pl-6 flex flex-col gap-10 max-w-full w-full">
+  
+      <div class="dropdown-item bg-white p-5 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
+        <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-lg md:text-xl focus:outline-none">
+          E-Yantra Robotics Competition
+          <svg class="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="content mt-3 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-screen-lg">
+          <p class="text-gray-500 mb-1">Sept 2023 – Oct 2023</p>
+          <div class="left flex flex-col gap-4 justify-start w-full md:w-1/2 p-6">
+            <h1 class="text-5xl md:text-7xl font-normal text-gray-900 pl-6 cursor-pointer hover:text-blue-300 hover:drop-shadow-lg transition duration-200 ease-in-out">E-yantra</h1>
+            <p class="leading-relaxed font-normal m-0">
+              E-yantra was my first major project, which I took part in back in 2021 when I was in the 9th grade. At that time, ChatGPT didn’t exist, and that was when we truly discovered our own potential and how dedicated we could be. Our team of four participated in the E-yantra Robotics Competition organized by E-yantra, based in India. We were required to program, present our ideas, and submit our projects online.
+            </p>
+            <div class="image-block flex flex-wrap gap-20 mt-1 items-center">
+              <img src="game.png" alt="Game Screenshot" class="rounded-lg bg-gray-200 max-w-full max-h-[350px] object-cover" />
+            </div>
+          </div>
+          <div class="right flex flex-col gap-4 items-center justify-center w-full md:w-1/2 p-6">
+            <img src="e-Yantra.jpg" alt="Eyantra Certificate" class="rounded-lg shadow-lg max-w-[80%] sm:max-w-[50%]" />
+            <p class="leading-relaxed font-normal m-0 max-w-xl text-center md:text-left">
+              Guided by our teachers, we explored Python on our own, experimenting with new methods and learning how different programming concepts could be implemented. We even used the Turtle library to create drawings through code. By the end of the competition, our team was honored to be ranked among the top 16 teams, and we received honorable mentions from the organizers.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div class="timeline-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
-        <a href="internship.html" class="timeline-link inline-block text-gray-600 hover:text-blue-600 transition">
-          <h3 class="text-xl md:text-3xl">Space and Technology Internship Program</h3>
-        </a>
-        <p class="text-base md:text-lg text-gray-500 mt-2">May 2023 – June 2023</p>
+  
+      <div class="dropdown-item bg-white p-5 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
+        <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-lg md:text-xl focus:outline-none">
+          Space and Technology Internship Program
+          <svg class="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="content mt-3 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-screen-lg">
+          <p class="text-gray-500 mb-1">May 2023 – June 2023</p>
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="max-w-full md:max-w-[50%] flex flex-wrap gap-4 justify-start">
+              <img src="moon.jpg" alt="Moon" class="max-w-[40%] max-h-[30vh] rounded-xl shadow-md bg-gray-200 object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+              <img src="dobsonian_telescope.JPG" alt="Stargazing" class="max-w-[40%] max-h-[30vh] rounded-xl shadow-md bg-gray-200 object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+            </div>
+            <div class="max-w-full md:max-w-[50%]">
+              <p class="leading-relaxed max-w-4xl mb-4 text-justify font-normal">
+                Back in high school, I was part of the Space and Technology Internship Program for two years. Through this program, we learned various extracurricular skills such as telescope handling, using Fab Lab technologies and machinery, and exploring ideas related to space. We often organized stargazing events where we set up telescopes for other students to observe the night sky. After learning from our seniors, we also taught younger students how telescopes work and the mechanisms behind them. As we progressed, we continued this tradition passing down the skills and knowledge we had gained to new members of the program, just as our seniors had done for us.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="timeline-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
-        <a href="global.html" class="timeline-link inline-block text-gray-600 hover:text-blue-600 transition">
-          <h3 class="text-xl md:text-3xl">First Global Robotics Competition</h3>
-        </a>
-        <p class="text-base md:text-lg text-gray-500 mt-2">Oct 2021 – Jan 2022</p>
+  
+      <div class="dropdown-item bg-white p-5 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
+        <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-lg md:text-xl focus:outline-none">
+          First Global Robotics Competition
+          <svg class="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="content mt-3 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-screen-lg">
+          <p class="text-gray-500 mb-1">Oct 2021 – Jan 2022</p>
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="max-w-full md:max-w-[50%] flex flex-wrap gap-4 justify-center">
+              <img src="team1.jpg" alt="Team photo" class="max-w-[30%] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+              <img src="robot.jpg" alt="Robot" class="max-w-[30%] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+              <img src="team.jpg" alt="Programming Team" class="max-w-[30%] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+            </div>
+            <div class="max-w-full md:max-w-[50%]">
+              <p class="mb-3 leading-relaxed">
+                The FIRST Global Competition was something entirely new to me, I had never heard of it before, even though I was always deeply involved in extracurricular activities. It was my first time learning about such an international event, and I was truly honored to be part of the non-traveling team, supporting the main team that represented Bhutan in Singapore.
+              </p>
+              <p class="leading-relaxed">
+                Within the team, we were divided into several groups, such as construction, multimedia, and programming. I was a member of the programming group, where I contributed my skills and knowledge to help our team grow and improve. Even though I wasn’t among those who travelled, I felt proud knowing that my efforts played a small part in something much bigger—helping my friends represent Bhutan on a global stage.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="timeline-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
-        <a href="panoptes.html" class="timeline-link inline-block text-gray-600 hover:text-blue-600 transition">
-          <h3 class="text-xl md:text-3xl">PANOPTES Project</h3>
-        </a>
-        <p class="text-base md:text-lg text-gray-500 mt-2">Feb 2024 – Dec 2024</p>
+  
+      <div class="dropdown-item bg-white p-5 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
+        <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-lg md:text-xl focus:outline-none">
+          PANOPTES Project
+          <svg class="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="content mt-3 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-screen-lg">
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="max-w-full md:max-w-[50%]">
+              <div class="left flex flex-col gap-4 justify-start w-full md:w-1/2 p-6 box-border">
+                <h1 class="text-5xl md:text-7xl font-normal mb-2 tracking-tight text-gray-900 hover:text-blue-300 hover:drop-shadow-lg cursor-pointer transition duration-200 ease-in-out">
+                  PANOPTES
+                </h1>
+                <p class="leading-relaxed font-normal mb-3">
+                  Contributed to the successful upgrade and installation of the PANOPTES astronomical telescope units as part of a collaborative project involving international experts and local educational institutions.
+                </p>
+                <div class="image-block flex flex-wrap gap-6 items-center mt-2 justify-start">
+                  <img src="panoptes.jpeg" alt="PANOPTES Telescope" class="rounded-lg bg-gray-200 max-w-[400px] max-h-[320px] object-cover shadow-md hover:scale-105 transition-transform duration-200 ease-in-out w-full md:w-auto" />
+                  <img src="panoptes.jpg" alt="PANOPTES Certificate" class="rounded-lg bg-gray-200 max-w-[400px] max-h-[320px] object-cover shadow-md hover:scale-105 transition-transform duration-200 ease-in-out w-full md:w-auto" />
+                </div>
+              </div>
+            </div>
+            <div class="max-w-full md:max-w-[50%]">
+              <div class="right flex flex-col gap-4 items-center justify-center w-full md:w-1/2 p-6 box-border">
+                <img src="star.png" alt="Star Trails" class="main-image rounded-xl max-w-full max-w-[600px] shadow-lg" />
+                <p class="leading-relaxed font-normal max-w-xl text-center md:text-left mt-3">
+                  Engaged in the assembly, modification, and testing of hardware components including camera and control boxes. Participated in software configuration and communication setup to optimize telescope functionality.
+                  <br /><br />
+                  This experience enhanced technical skills in telescope instrumentation and teamwork in a multidisciplinary environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="timeline-item bg-white p-6 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
-        <a href="fablab.html" class="timeline-link inline-block text-gray-600 hover:text-blue-600 transition">
-          <h3 class="text-xl md:text-3xl">FABLAB Paro</h3>
-        </a>
-        <p class="text-base md:text-lg text-gray-500 mt-2">2023</p>
+  
+      <div class="dropdown-item bg-white p-5 rounded-xl shadow-sm transition duration-200 hover:shadow-lg hover:-translate-y-1">
+        <button aria-expanded="false" class="flex justify-between items-center w-full text-left text-gray-900 font-semibold text-lg md:text-xl focus:outline-none">
+          FABLAB Paro
+          <svg class="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="content mt-3 max-h-0 overflow-hidden transition-max-height duration-700 ease-in-out text-gray-700 text-base md:text-lg max-w-screen-lg">
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="max-w-full md:max-w-[50%] flex flex-wrap gap-4 justify-start">
+              <img src="crawler.jpg" alt="Crawler Drone" class="max-w-[45%] max-h-[30vh] rounded-xl shadow-md bg-gray-200 object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+              <img src="profile.png" alt="Profile" class="max-w-[45%] max-h-[30vh] rounded-full shadow-md object-cover hover:scale-105 transition-transform duration-200 ease-in-out" />
+            </div>
+            <div class="max-w-full md:max-w-[50%]">
+              <p class="leading-relaxed max-w-4xl mb-4 text-justify font-normal">
+                My participation in the Fab Lab is one of the achievements I am truly proud of from my high school years. Being part of the Fab Lab management team was not only an honor but also an experience that shaped me into the person I am today. Through the Fab Lab, I learned to operate various types of machinery from teachers, peers, and online resources, and I was always eager to share that knowledge by teaching my juniors.
+              </p>
+              <p class="leading-relaxed max-w-4xl mb-8 text-justify font-normal">
+                I was among the students who excelled in handling most of the Fab Lab equipment. Over time, I completed several projects using its machines—one of them was creating an Eiffel Tower model for my mathematics project on integral calculus, using laser cutting technology. I also contributed to the crawler drone project through 3D printing and Shop-Bot circuit board fabrication. Beyond that, I helped redesign the Fab Lab space, applying my skills in 3D design, and explored other creative processes such as t-shirt designing and sticker printing.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+  
     </div>
   </section>
+  
+  <script>
+    document.querySelectorAll('.dropdown-item > button').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+          content.style.maxHeight = null;
+          button.setAttribute('aria-expanded', 'false');
+          button.querySelector('svg').style.transform = 'rotate(0deg)';
+        } else {
+          document.querySelectorAll('.dropdown-item > button').forEach(btn => {
+            btn.nextElementSibling.style.maxHeight = null;
+            btn.setAttribute('aria-expanded', 'false');
+            btn.querySelector('svg').style.transform = 'rotate(0deg)';
+          });
+          content.style.maxHeight = content.scrollHeight + 'px';
+          button.setAttribute('aria-expanded', 'true');
+          button.querySelector('svg').style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+  
 
   <!-- EDUCATION -->
   <section id="education" class="bg-amber-50 px-10 py-32 text-left mt-0">
     <h2 class="text-6xl md:text-8xl font-extrabold text-blue-300 mb-8 tracking-tight">education</h2>
     <div class="edu-grid grid grid-cols-1 md:grid-cols-3 gap-14 pl-10 font-semibold text-3xl max-w-full w-full">
-      <div>
-        <h3 class="text-2xl mb-2">Primary Education</h3>
-        <p>Gangrithang Primary School <br /> 7 years</p>
+  
+      <div class="edu-item flex items-center gap-6">
+        <img src="open-book.png" alt="Primary School" class="edu-img rounded-xl max-h-32 object-cover" />
+        <div class="edu-text flex-1 text-center text-2xl font-semibold">
+          Primary Education
+        </div>
+        <div class="edu-years text-right text-xl text-gray-700 font-normal">
+            Gangrithang Primary School <br>
+            7 years
+        </div>
       </div>
-      <div>
-        <h3 class="text-2xl mb-2">Higher Education</h3>
-        <p>The Royal Academy <br /> 6 years <br /> Diploma in Bhutan Baccalaureate</p>
+  
+      <div class="edu-item flex items-center gap-6">
+        <img src="mortarboard.png" alt="Royal Academy" class="edu-img rounded-xl max-h-32 object-cover" />
+        <div class="edu-text flex-1 text-center text-2xl font-semibold">
+          Higher Educartion
+          
+        </div>
+        <div class="edu-years text-right text-xl text-gray-700 font-normal">
+            The Royal Academy <br>
+          Diploma in Bhutan Baccalaureate <br>
+          6 years
+        </div>
       </div>
-      <div>
-        <h3 class="text-2xl mb-2">Undergraduate</h3>
-        <p>College of Science and Technology <br /> BE in Software Engineering</p>
+  
+      <div class="edu-item flex items-center gap-6">
+        <img src="bachelor.png" alt="College of Science and Technology" class="edu-img rounded-xl max-h-32 object-cover" />
+        <div class="edu-text flex-1 text-center text-2xl font-semibold">
+          Undergraduate          
+        </div>
+        <div class="edu-years text-right text-xl text-gray-700 font-normal">
+            College of Science and Technology <br>
+            BE in Software Engineering
+        </div>
       </div>
     </div>
   </section>
