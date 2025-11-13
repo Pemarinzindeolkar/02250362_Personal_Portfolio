@@ -176,3 +176,22 @@ section{min-height:100vh;display:flex;align-items:center;justify-content:center;
       max-height: 5rem;
     }
   }
+  .typing {
+    display: inline-block;
+    overflow: hidden;             /* Ensures text is hidden outside the container */
+    white-space: nowrap;          /* Keeps text on one line */
+    border-right: 0.15em solid #6b21a8; /* Cursor effect */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* Typing animation */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* Blinking cursor animation */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #6b21a8; }
+  }
